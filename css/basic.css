@@ -1,0 +1,772 @@
+/* 全局 */
+* {
+    list-style: none;
+    text-decoration: none !important;
+    padding:0;
+    margin:0;
+}
+
+/* 全局缩略图样式 */
+div.thumbnail a img {
+    width:100% !important;
+}
+
+/* swiper全局样式 */
+.swiper-container {
+    padding: 0 0;
+    width: 100%;
+    height:auto;
+}
+.swiper-wrapper {
+    height:auto;
+}
+.swiper-slide {
+    height: auto;
+}
+/* swiper切换按钮位置调整 */
+.swiper-button-next {
+    right: 0;
+    top: 30%;
+}
+.swiper-button-prev {
+    left: 0;
+    top: 30%;
+}
+/* swiper分页器调整 */
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom:24px;
+}
+.swiper-pagination-bullet-active {
+    background: #ee7900;
+}
+
+
+/* 導航部分 */
+div.header {
+    background: #fff;
+    box-shadow: 0px 4px 14px rgb(251, 246, 241);
+    margin-bottom:4px;
+}
+.navbar .navbar-toggle {
+    border: 1px solid #f8f8f8;
+    color: #000;
+} 
+/* 自定义导航元素部分位置 */
+div.my-collapse {
+    position: absolute;
+    right:0;
+    z-index:999;
+    max-height:400px;
+}
+/* 导航栏logo标题 */
+#logo {
+    display: inline-block;
+    width:160px;
+    height:58px;
+    padding:0;
+    background:url('../img/imgs.png');
+    background-position:-1270px -1120px;
+}
+nav {
+    margin-left:0;
+    padding:12px 0;  
+}
+/* 导航标签样式 */
+ul.navbar-nav > li > a {
+    font-size:16px;
+    font-weight: normal;
+    font-family:MicroYaHei Regular;
+    color:#555;
+}
+/* md lg下导航栏不显示font-awesome */
+ul.my-menu li a .fa {
+    display: none;
+}
+ul.my-menu li ul.dropdown-menu li a i.fa {
+    display:inline-block;
+}
+ul.my-menu li ul.dropdown-menu li {
+    padding:5px 5px 5px 5px;
+}
+/* 更改登錄注冊操作顔色  */
+ul.navbar-nav li a.SignIn {
+    color:#222;
+    font-size:16px;
+} 
+/* 导航元素选定情况下a的样式 */
+ul.navbar-nav li.active a {
+    position: relative;
+    text-decoration: none;
+    color:#ee7900;
+}
+/* 防止下拉菜单中的a被同时更改 */
+ul.navbar-nav li.active ul a {
+    color:#666;
+}
+/* 固定导航栏样式 */
+.fixed {  
+    position: fixed;  
+    top:0%;  
+    width: 100%;  
+    margin: 0 auto;  
+    left:0%;
+    z-index: 100;  
+    box-shadow: 0 0 0 transparent !important;
+}  
+/* 导航栏-媒体查询部分 */
+@media (min-width: 768px) {
+    /* 更改被选中导航元素的样式 */
+    ul.navbar-nav > li.active > a:after {
+        content:'';
+        width:calc(50%);/*如果两边都要留空位的话就需要计算宽度*/
+        height:3px;
+        background:#ee7900;
+        bottom:9px;
+        left:25%;
+        border-radius: 4px;
+        position:absolute;
+    }
+    ul.navbar-nav > li.active > a.SignIn:after,
+    ul.navbar-nav > li.active a.dropdown-toggle:after {
+        width:0;
+    }
+}
+
+@media (max-width: 767px) {
+    /* 更改logo变小 */
+    div.navbar-header a#logo {
+      
+    }
+    /* md xs 导航菜单适应 */
+    div.my-collapse {
+        top:46px;
+    }
+    ul.my-menu {
+        float:left;
+        margin:7.5px -15px;
+        margin-right:20px;
+        min-width:200px;
+        background: #fff;
+        border:1px solid #e7e7e7;
+        border-radius: 5px 5px 5px 5px;
+        height:auto;
+    }
+    ul.my-menu > li {
+        border-bottom:1px solid rgba(0, 0, 0, .1);
+    }
+    ul.my-menu li {
+        padding:5px 5px 5px 5px;
+        margin-left:0;
+        /* text-align: center; */
+    }
+    ul.my-menu li a {
+        padding-left:14px;
+    }
+    ul.my-menu li a i.fa {
+        display: inline-block;
+    }
+}
+
+
+
+/* 预约课程 */
+div.yuyue {
+    height:100px;
+    background: #f8931d;
+    font-family: MicrosoftYahei Regular;
+    color:#fff;
+}
+div.yuyue > div {
+    position: relative;
+    height:100%;
+}
+div.yuyue button:hover {
+    opacity: .7;
+}
+div.yuyue > div span {
+    position: absolute;
+    left:15px;   
+    font-size:20px;
+    margin-top:37px;
+}
+div.yuyue > div > button {
+    position: absolute;
+    right:15px;
+    display: inline-block;
+    margin-top:30px;
+    height:50px;
+    width:170px;
+    border:1px solid #fff;
+    border-radius: 24px;
+    background:rgba(0, 0, 0, 0);
+    font-size: 20px;
+}
+/* xs适应 */
+div.yuyue.visible-xs {
+    /* height:60px; */
+    font-size:12px;
+    text-align: center;
+}
+div.yuyue.visible-xs button {
+    margin-top:20px;
+    margin-bottom:10px;
+    border:1px solid #fff;
+    border-radius: 24px;
+    background:rgba(0, 0, 0, 0);
+    font-size: 16px;
+    height:34px;
+}
+
+
+
+
+/* 底部 */
+footer {
+    padding-bottom:24px;
+    background: #35353d;
+    padding-top:50px;
+    color:#fff;
+}
+/* 底部标题 */
+footer h4 {
+    margin-bottom:35px;
+    font-family: MicrosoftYaHei Regular;
+    font-size: 18px;
+}
+footer a {
+    color:#fff !important;
+}
+footer p {
+    line-height:24px;
+}
+footer a:hover {
+    color:#499ef3 !important;
+}
+/* 二维码 */
+footer div.code {
+    width:167px;
+    height:167px;
+    background: url('../img/imgs.png');
+    background-position:-36px -1174px;
+    margin:0 auto;
+}
+/* footer-媒体查询部分 */
+@media (min-width: 768px) {
+    .cooperation, .link {
+        text-align: left;
+    }
+}
+@media (max-width: 767px) {
+    .cooperation, .link {
+        border-bottom:2px solid #ee7900;
+        margin-bottom:30px;
+        font-size:12px !important;
+    }
+    .cooperation h4, .link h4 {
+        font-size:16px !important;
+    }
+    .end {
+        line-height:30px;
+        font-size:12px;
+    }
+}
+
+
+
+
+/* 留言气泡 */
+div.bubble {
+    position: relative;
+    cursor: pointer;
+    position: fixed;
+    right:4%;
+    top:60%;
+    width:67px;
+    height:67px;
+    border-radius: 50%;
+    background:url('../img/css_sprites.png');
+    background-position:-1294px -848px;
+    z-index:4;
+    box-shadow:0px 3px 10px rgb(47, 192, 190);
+    
+}
+/* 留言气泡触发样式 */
+div.bubble.show {
+    background:url('../img/css_sprites.png');
+    background-position:-1443px -848px;
+}
+/* 留言栏目组样式 */
+/* 栏目组关闭样式 */
+div.bubble_msg-header .close_msg {
+    width:16px;
+    height:16px;
+    cursor: pointer;
+    position:absolute;
+    right:9px;
+    top:9px;
+    opacity:.7;
+}
+div.bubble_msg-header .close_msg:hover {
+    opacity:1;
+}
+div.bubble_msg {
+    display: none;
+    cursor: auto;
+    position: absolute;
+    top:-200px;
+    right:0;
+    width:360px;
+    height:186px;
+    background:#fff;
+    box-shadow: 0px 3px 10px #27a7aa;
+}
+div.bubble_msg-header {
+    position: relative;
+    height:32px;
+    background:#2fc0be;
+    margin-bottom:20px;
+    color:#fff;
+    font-family: MicrosoftYaHei Regular;
+    font-size:14px;
+    text-align: center;
+    line-height:32px;
+}
+/* 留言-媒体查询 */
+@media (max-width: 767px) {
+    /* 设置缩小后的留言栏目组 */
+    div.bubble_msg {
+        width:280px !important;
+        font-size:12px;
+    }
+    div.bubble_msg > .row > div {
+        padding:1px;
+    }
+}
+
+
+
+/* 模态框 */
+/* 模态框统一表单样式 */
+/* 将所有fade in状态的模态框的padding-right去掉 */
+div.modal.fade.in {
+    padding-right:0 !important;
+}
+/* 通用close */
+div.modal div.modal-header button.close {
+    opacity: 1;
+} 
+div.modal div.modal-header button.close:hover {
+    opacity: 0.7;
+}
+/* 登录注册 */
+.modal ul#Signs li a {
+    margin-bottom:-1px;
+    padding:15px 15px;
+}
+.modal ul#Signs li.active a {
+    border:0;
+    border-bottom:1px dotted #ee7900;
+}
+.modal ul#Signs li a:hover {
+    background: #eee;
+}
+
+/* 预约 */
+div.modal#subscribe div.modal-content {
+    background: url('../img/modal-left') top left no-repeat,url('../img/modal-on') top right no-repeat,url('../img/modal-below') bottom left no-repeat #fff;
+}
+/* 预约表单 */
+/* 预约表单 */
+div.modal#subscribe div.modal-header {
+    border-bottom:0;
+}
+div.modal#subscribe div.modal-footer {
+    border-top:0;
+}
+div.modal#subscribe div.modal-content .btn {
+    background: #ff9514;
+    border-color: #ff9514;
+    outline-color: #ff9514;
+}
+div.modal#subscribe div.modal-content .modal-title {
+    font-size:24px;
+    font-family: MicrosoftYaHei Regular;
+    text-align: center;
+}
+div.modal#subscribe div.modal-content form .input-group-addon {
+    position:absolute;
+    z-index:4;
+    height:35px;
+    width:35px;
+    background:transparent;
+    border:0;
+    padding:5px 6px 0 6px;
+
+}
+div.modal#subscribe div.modal-content form .form-control {
+    padding-left:42px;
+    font-size:14px;
+    font-family:MicrosoftYaHei Regular;
+    color:#666;
+}
+div.modal#subscribe div.modal-content form input::-webkit-input-placeholder {
+    color:#a6a6a6;
+}
+div.modal#subscribe div.modal-content form #check_btn {
+    background: transparent;
+    color:#ff9514;
+    padding-left:0;
+    padding-right:0;
+    height:34px;
+}
+div.modal#subscribe div.modal-content form input:focus,
+div.modal#subscribe div.modal-content form select:focus {
+    border-color :#ff9514;
+}
+div.modal#subscribe div.modal-content form label.checkbox-inline {
+    margin-left:0;
+    color:#a6a6a6;
+}
+.input-group[class*="col-xs"] {
+    float:left !important;
+}
+.ts {
+    font-size:14px;
+    line-height:34px;
+}
+.text-danger {
+    font-family: MicrosoftYaHei Regular;
+    color:rgb(87, 178, 255);
+    font-size:20px;
+}
+form .col-xs-1.text-left {
+    padding-left:0;
+}
+/* 预约表单--checkbox样式 */
+div.modal#subscribe div.modal-content form label.checkbox-inline .checkbox-change {
+    display:none;
+}
+div.modal#subscribe div.modal-content form label.checkbox-inline span.checkbox-input {
+    background:#fff;
+    border:1px solid #ff9514;
+    width:12px;
+    height:12px;
+    vertical-align: middle;
+    line-height:1px;
+    display: inline-block;
+    margin-top:-2px;
+    padding:1px;
+}
+div.modal#subscribe div.modal-content form label.checkbox-inline .checkbox-change:checked + span.checkbox-input:after {
+    background-color: #ff9514;
+    /* border-radius: 100%; */
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 8px
+}
+/* 预约表单--select样式 */
+div.modal#subscribe div.modal-content form select {
+    cursor:pointer;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url("../img/arrow.jpg") no-repeat 98% 50%;
+}
+div.modal#subscribe div.modal-content form select.a6 {
+    color:#a6a6a6 !important;
+}
+/* select-options悬停样式 */
+div.modal#subscribe div.modal-content form select:focus options:checked {
+    color:#4df;
+}
+
+/* 模态框-媒体查询 */
+@media (max-width: 767px) {
+    /* 设置缩小后的统一modal-title */
+    div.modal-content .modal-title {
+        font-size:16px !important;
+    }
+    /* 设置小屏幕时预约菜单 */
+    div.modal#subscribe div.modal-content {
+        background-size: 120px 120px !important;
+    }
+    /* 小屏幕时预约菜单验证码字体 */
+    div.modal#subscribe div.modal-content form button#check_btn {
+        font-size:12px;
+    }
+}
+
+
+
+
+/* 通用用户导航头像样式 */
+/* 头像-媒体查询 */
+@media (max-width: 992px) {
+    /* 更改头像大小 */
+    li.dropdown a.user_head {
+        padding-top:6px !important;
+    }
+    li.dropdown a.user_head img {
+        width:40px !important;
+        height:40px !important;
+        right:-36px !important;
+    }
+    ul.navbar-nav > li > a {
+      font-size:14px !important;
+      font-weight:normal !important;
+    }
+    ul.my-menu li {
+      margin-left:0px !important;
+      margin-right:12px !important;
+    }
+    ul.navbar-nav li a.SignIn span {
+      margin-right:4px !important;
+      font-weight:normal !important;
+    }
+}
+
+
+
+/* dropmenu菜单-媒体查询 */
+@media (min-width: 768px) {
+    /* 通用下拉表样式 */
+    .dropdown-menu {
+        min-width:0;
+    }
+    .dropdown-menu > li > a {
+        padding:3px 10px;
+    }
+    .my-menu.navbar-nav > li > .dropdown-menu {
+        padding:0;
+        box-sizing: border-box;
+        /* right:-60px !important; */
+        right:auto;
+        left:50%;
+        top:130% !important;
+        box-shadow:0 0 0 transparent;
+        border-radius: 6px !important;
+    }
+    .my-menu.navbar-nav > li > .dropdown-menu li {
+        padding:0px !important;
+        margin:0 !important;
+    }
+    .my-menu.navbar-nav > li > .dropdown-menu li a {
+        height:32px !important;
+        padding-top:6px !important;
+        padding-bottom:6px !important;
+    }
+    .my-menu.navbar-nav > li > .dropdown-menu li a i {
+        color:rgb(227, 159, 86) !important;
+        margin-right:6px !important;
+    }
+    .my-menu.navbar-nav > li > .dropdown-menu li a:hover,
+    .my-menu.navbar-nav > li > .dropdown-menu li.active a:hover {
+        background: rgb(255, 233, 184) !important;
+        color:rgb(227, 159, 86) !important;
+    }
+    .my-menu.navbar-nav > li > .dropdown-menu > .active > a {
+        background: transparent !important;
+    }
+    /* 小三角 */
+    .my-menu.navbar-nav > li > .dropdown-menu:after, 
+    .my-menu.navbar-nav > li > .dropdown-menu:before {
+        content:"";
+        display:block;
+        border-width:20px;
+        position:absolute; 
+        top:-40px;
+        left:50%;
+        margin-left:-20px;
+        border-style:solid dashed dashed;
+        border-color:transparent transparent rgba(0, 0, 0, .15) transparent;
+        font-size:0;
+        line-height:0;
+    }
+    .my-menu.navbar-nav > li > .dropdown-menu:after{
+        top:-39px;
+        border-color:transparent transparent #FFF transparent;
+    }
+    /* 新填充小三角 */
+    .my-menu.navbar-nav > li > .dropdown-menu.full:after,
+    .my-menu.navbar-nav > li > .dropdown-menu.full:before {
+        content:"";
+        display:block;
+        border-width:20px;
+        position:absolute; 
+        top:-40px;
+        left:50%;
+        margin-left:-20px;
+        border-style:solid dashed dashed;
+        border-color:transparent transparent rgba(0, 0, 0, .15) transparent;
+        font-size:0;
+        line-height:0;
+    }
+    .my-menu.navbar-nav > li > .dropdown-menu.full:after {
+        top:-39px;
+        border-color:transparent transparent rgb(255, 233, 184) transparent;
+    }
+    
+    
+
+
+}
+
+
+/* 大屏幕时下拉菜单旋转动画 */
+@media (min-width: 768px) {
+    ul.dropdown-menu {
+        animation:circling 1.3s ease;
+        box-shadow:0px 2px 10px #ededed !important;
+    }
+    @keyframes circling{  
+        from{  
+          transform:rotateY(0deg);  
+        }  
+        to{  
+          transform:rotateY(360deg);  
+        }  
+    }  
+} 
+
+/* 新版通用分页器 */
+.zh-page {
+    text-align: center;
+    margin:66px 0;
+}
+.zh-page ul {
+    display:inline-block;
+    height:20px;
+}
+.zh-page ul li {
+    float:left;
+    line-height: 20px;
+    margin:0 9px;
+    color:#a6a6a6;
+    font-size:14px;
+}
+.zh-page ul li a {
+    display:block;
+    height:100%;
+    min-width:10px;
+    padding:6px 12px;
+    border-radius: 6px;
+    color:#a6a6a6;
+    background: #fff;
+    border:1px solid #ddd;
+}
+.zh-page ul li a:hover {
+    background: #eee;
+}
+.zh-page ul .zh-cur a {
+    background:#ffb22d;
+    color:#fff;
+    border-color:#ffb22d;
+}
+.zh-page ul .zh-ellipsis {
+    padding-top:14px;
+}
+
+/* 新版分页器-媒体查询 */
+@media (max-width: 767px) {
+    .zh-page {
+        margin:20px 0;
+    }
+    .zh-page ul li  {
+        margin:0 2px;
+    }
+    .zh-page ul li a {
+        padding:1px 5px;
+        font-size:12px;
+    }
+    .zh-page ul li.zh-ellipsis {
+        padding-top:6px;
+    }
+}
+
+
+/* 雪碧图中的各种小图标类 */
+/* 导航图标 */
+i.icon-bar {
+    width:16px;
+    height:16px;
+    display:inline-block;
+    background:url('../img/css_sprites.png');
+    vertical-align: middle;
+    margin-right:6px;
+}
+i.icon-bar.icon-works {
+    background-position:-1493px -1177px;
+    vertical-align: bottom;
+}
+i.icon-bar.icon-news {
+    background-position:-1530px -1175px;
+}
+i.icon-bar.icon-user {
+    background-position:-1381px -1175px;
+    vertical-align: text-top;
+}
+i.icon-bar.icon-set {
+    background-position:-1417px -1175px;
+    vertical-align: text-top;
+}
+i.icon-bar.icon-out {
+    background-position:-1454px -1175px;
+    vertical-align: text-top;
+}
+/* 表单图标 */
+i.icon-form {
+    width:23px;
+    height:23px;
+    display:inline-block;
+    background:url('../img/css_sprites.png');
+    /* border:1px solid red; */
+}
+i.icon-form.icon-name {
+    background-position:-1481px -1096px;
+}
+i.icon-form.icon-age {
+    background-position:-1384px -1096px;
+}
+i.icon-form.icon-classes {
+    background-position:-1433px -1132px;
+}
+i.icon-form.icon-phone {
+    background-position:-1481px -1132px;
+}
+i.icon-form.icon-code {
+    background-position:-1432px -1096px;
+}
+i.icon-form.icon-free-time {
+    background-position:-1382px -1132px;
+}
+i.icon-form.icon-place {
+    background-position:-1526px -1096px;
+}
+i.icon-form.icon-search {
+    background-position:-1524px -1132px;
+}
+
+/* 气泡用联系方式图标 */
+i.icon-bubble {
+    display: block;
+    width:74px;
+    height:74px;
+    background:url('../img/css_sprites.png');
+    /* border:1px solid red; */
+}
+i.icon-bubble.icon-qq {
+    background-position:-1348px -981px;
+}
+i.icon-bubble.icon-tele {
+    background-position:-1478px -982px;
+}
+i.icon-bubble.icon-weixin {
+    background-position:-1213px -981px;
+}
+/* 气泡用关闭按钮 */
+i.icon-bubble.icon-close {
+    width:16px;
+    height:16px;
+    background-position:-1325px -1174px;
+}
+

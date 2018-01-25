@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShineLAB</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" class="css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" class="css">
+    <!-- 引入animate.css -->
+    <link rel="stylesheet" href="./css/animate.css" class="css">
+    <link rel="stylesheet" href="./css/basic.css" class="css">
+    <link rel="stylesheet" href="./css/news.css" class="css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <style>
+        div.news-main-right .right-header {
+            border: 0;
+        }
+
+        div.news-main-right div.row div.news-info {
+            border: 1px solid #f0f0f0;
+            padding: 50px;
+            margin-bottom: 60px;
+        }
+
+        div.news-main-right div.row div.news-info p {
+            font-family: MicrosoftYaHei Regular;
+            font-size: 14px;
+            color: #666;
+            line-height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <!-- header-导航容器，固定用 -->
+    <div class="header">
+        <div class="container top-nav">
+            <nav class="navbar" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" id='logo'></a>
+                        <!-- 汉堡按钮-sm下显示导航元素 -->
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#topmenu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- 导航元素部分 -->
+                    <div class="collapse navbar-collapse my-collapse" id="topmenu">
+                        <!-- 导航元素菜单 -->
+                        <ul class="nav navbar-nav navbar-right my-menu">
+                            <li class='active'>
+                                <a href="#">
+                                    <i class="fa fa-home"></i> 首页</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-comments-o"></i> 交流社区</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-play-circle"></i> 在线课堂</a>
+                            </li>
+                            <!-- 下拉菜单 -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-newspaper-o"></i> 最新动态
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/nav/news_nav_icon_works.png" alt="" style='margin-right:6px;'> 创客作品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/nav/news_nav_icon_news.png" alt="" style='margin-right:6px;'> 哨音新闻</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-code"></i> 实验室
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-child"></i> Stratch在线创作</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-codepen"></i> CodeBear在线创作</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-android"></i> App Inventer手机编程</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-microchip"></i> CodeAir在线创作</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-sliders"></i> SimAir在线仿真</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-download"></i> 资源下载</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-envelope"></i> 关于我们</a>
+                            </li>
+                            <li>
+                                <!-- 点击触发模态框(登录、注册) -->
+                                <a href="#" data-toggle='modal' data-target='#SignIn' data-backdrop='static' class='SignIn'>
+                                    <span style='margin-right:18px;' class='hidden-xs'>|</span>
+                                    <i class="fa fa-sign-in"></i> 登录/注册</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 新闻主体 -->
+    <div class="container news-main">
+        <div class="row">
+            <!-- 左部导航 -->
+            <div class="news-main-left col-md-4 hidden-xs hidden-sm">
+                <!-- 导航栏目 -->
+                <div class="title wow slideInLeft wow bounceIn" data-wow-duration="0.5s">哨音新闻</div>
+                <div class="modules wow slideInLeft wow bounceIn" data-wow-duration="0.7s">活动公告</div>
+                <div class="modules wow slideInLeft wow bounceIn" data-wow-duration="1s">高考</div>
+                <div class="modules wow slideInLeft wow bounceIn" data-wow-duration="1.2s">少儿编程</div>
+            </div>
+            <div class="news-main-left visible-xs visible-sm">
+                    <!-- 控制标签 -->
+                    <div class="left-control">
+                        展开选项
+                    </div>
+                    <!-- 导航栏目 -->
+                    <div class="title">哨音新闻</div>
+                    <div class="modules">活动公告</div>
+                    <div class="modules">高考</div>
+                    <div class="modules">少儿编程</div>
+            </div>
+            <!-- 右部主体 -->
+            <div class="news-main-right col-md-8">
+                <!-- 右部标题 -->
+                <div class="row">
+                    <div class="right-header text-center">
+                        <h4>第32届天津市青少年科技创新大赛圆满落幕</h4>
+                    </div>
+                </div>
+                <!-- 文字内容 -->
+                <div class="row">
+                    <div class="news-info">
+                        <p>内容提要：第32届天津市青少年科技创新大赛颁奖典礼在河西区文化中心隆重举行。本次大赛共收到创新作品1598件，157件进入终评展示。</p>
+
+                        <p>天津北方网讯：第32届天津市青少年科技创新大赛颁奖典礼在河西区文化中心隆重举行。天津市科协党组书记、常务副主席姚建军、河西区政协主席李耀进、天津市妇联副主席梁春早、天津市科协副主席段志强、天津市河西区副区长孙占军等领导出席了颁奖典礼并为获奖选手颁奖。
+                            <p>
+
+                                <p>本次大赛共收到创新作品1598件，157件进入昨天的终评展示。经过一天的评选，大赛共评选出素质评测优胜奖9名、优秀组织单位奖13名、科技教育创新校11名、节水科技创新奖10名、北斗专项奖7名、环球自然日专项奖11名、绿色建筑专项奖10名、海洋专项奖9名、建行杯专项奖6名、天宫专项奖6名。小学生创新项目二等奖23名、小学生创新项目一等奖37名、中学生创新项目二等奖49名、中学生创新项目一等奖64名。此外，大赛还将特殊贡献奖授予了对本次大赛给予大力支持的河西区科协。</p>
+
+
+
+                                <p>获奖选手合影</p>
+
+                                <p>其中获得“中学生创新项目一等奖”的南开中学杨云迪，他的作品是“基于多传感器信息融合的智能药盒设计”，以创新的设计为老年人的生活提供了便捷。这款药盒具备语音取药、实时体检等功能，体检数据可以生成图表通过手机APP上传，使子女及时得知老人身体状况，具有很高的实用价值。杨云迪介绍，作品已经申请了专利并被公司看中，完善后预计今年六月份进入市场，服务于更多老年人。</p>
+
+                                <p>天津中学校长陈晓明领取了十佳优秀组织奖，他谈到，天津中学一直十分重视学生的创新教育，将学生创新实践能力的培养放入正式课程，目前已开设的传统优势课程包括航模、机器人、生态园生物科学研究等。他表示，希望通过这些课程，拓宽学生的知识面，将学生的创新意识和动手实践能力结合起来，真正做到“有创意，能实现”。</p>
+
+
+
+                                <p>颁奖嘉宾为获奖选手颁奖</p>
+
+                                <p>天津市青少年科技创新大赛评委会主任杨书远在评审工作报告中总结了本次大赛亮点，并对学生作品归类点评。本次科技创新大赛的主题是创新、体验、成长”，从众多灵感来自生活的作品中可以发现，越来越多的学生将科技发明的着眼点落在“从生活中寻找灵感，在过程中不断创新”。</p>
+
+                                <p>　据了解，天津市青少年科技大赛至今已成功举办32届，大赛每年都吸引着大批对科技创新有浓厚兴趣的学生和教师参与。今年的第32届科技创新大赛在以往的基础上加深了大赛与学校、社会间的沟通，积极与学校课程形成联动，为学生提供交流课题，研究创新的平台。</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 底部 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-4 col-xs-12 text-center link">
+                    <h4>联系方式</h4>
+                    <p>
+                        <i class='fa fa-phone'></i> 电话: 00-821-7604</p>
+                    <p>
+                        <i class='fa fa-map-marker'></i> 地址: 上海市浦东新区向城路15号锦城大厦8楼A室</p>
+                    <a href='mailto:support@shinelab.cn'>
+                        <p>
+                            <i class='fa fa-envelope'></i> 邮箱: support@shinelab.con</p>
+                    </a>
+                </div>
+                <div class="col-md-5 col-sm-4 col-xs-12 text-center cooperation">
+                    <h4>合作机构</h4>
+                    <p>MIT</p>
+                    <p>美国杜克大学</p>
+                    <p>复旦大学</p>
+                    <p>英国BBC公司</p>
+                    <p>谷歌</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12 clearfix text-center">
+                    <div class='code pull-right hidden-xs'>
+
+                    </div>
+                    <div class='code visible-xs'>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row end hidden-xs" style='margin-top:30px;'>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <a href='http://www.miitbeian.gov.cn'>沪ICP备17009462号</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    ©2017-2017,ShineLAB,All Rights Reserved
+                </div>
+                <div class="col-md-4 col-sm-4 text-right hidden-xs">
+                    <span class=''>Designed By ShineLAB Tech</span>
+                </div>
+            </div>
+            <div class="row end visible-xs text-center" style='margin-top:30px;'>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <a href='http://www.miitbeian.gov.cn'>沪ICP备17009462号</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    ©2017-2017,ShineLAB,All Rights Reserved
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span class=''>Designed By ShineLAB Tech</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- 浮动留言气泡 -->
+    <div class="bubble" data-show='false'>
+        <div class="bubble_msg">
+            <div class="bubble_msg-header">
+                <p class='text-canter'>联系我们</p>
+                <div class="close_msg">
+                    <i class="icon-bubble icon-close"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-4 text-center">
+                    <div>
+                        <i class="icon-bubble icon-qq"></i>
+                        <p style='margin-top:14px;'>3387869560</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4 text-center">
+                    <div>
+                        <i class="icon-bubble icon-tele"></i>
+                        <p style='margin-top:14px;'>400-821-7604</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4 text-center">
+                    <div>
+                        <i class="icon-bubble icon-weixin"></i>
+                        <p style='margin-top:14px;'>微信公众号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 模态框部分 -->
+    <!-- 登录注册用 -->
+    <div class="modal fade" id='SignIn' tabindex="-1" role='dialog' aria-labelledby="SignInLabel" aria-hidden='true'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- 标签页 -->
+                    <ul id="Signs" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#Sign-in" data-toggle="tab">
+                                登录
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Sign-up" data-toggle="tab">
+                                注册
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <!-- 以下是登录部分 -->
+                    <div class="tab-pane fade in active" id="Sign-in">
+                        <form action="#" method='post' class='form-horizontal'>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="username" class='sr-only control-label col-xs-3'>用户名:</label>
+                                    <div class="input-group col-xs-6 col-xs-offset-3">
+                                        <div class="input-group-addon btn btn-warning">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <input type="text" class='input-small form-control' placeholder="用户名/邮箱" name='username' id='head_username'>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class='sr-only control-label col-xs-3'>密码:</label>
+                                    <div class="input-group col-xs-6 col-xs-offset-3">
+                                        <div class="input-group-addon btn btn-warning">
+                                            <i class="fa fa-lock"></i>
+                                        </div>
+                                        <input type="password" class='input-small form-control' placeholder="密码" name='password' id='head_password'>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <input type="button" class='btn btn-warning' id='head_login' value='登录'>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- 以下是注册部分 -->
+                    <div class="tab-pane fade" id="Sign-up">
+                        <form action="#" method='post' class='form-horizontal'>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="email" class='col-sm-3 control-label'>电子邮箱:</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" name='email' id='register_email' class='form-control' placeholder="请填写邮箱地址">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="username" class='col-sm-3 control-label'>用户名:</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" name='username' id='register_username' class='form-control' placeholder="请填写用户名">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class='col-sm-3 control-label'>密码:</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" name='password' id='register_password' class='form-control' placeholder="请填写密码">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password_confirm" class='col-sm-3 control-label'>确认密码:</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" name='password_confirm' id='register_confirm' class='form-control' placeholder="请确认密码">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tele" class='col-sm-3 control-label'>手机号码:</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" name='tele' id='register_tele' class='form-control' placeholder="请填写手机号码">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="check" class='col-sm-3 control-label'>验证码:</label>
+                                    <div class="col-sm-8" style='padding-left:0;'>
+                                        <div class="row">
+                                            <div class="col-xs-5">
+                                                <input type="text" name='check' id='register_check' class='form-control' placeholder="请填写验证码">
+                                            </div>
+                                            <input type="button" class='btn btn-success col-xs-5' id='get_check' value='获取验证码'>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <input type="button" class='btn btn-success' id='head_register' value='注册'>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/basic.js"></script>
+    <script>
+        $(function () {
+            // 模拟登陆成功,去除登录注册，改为头像
+            $('#head_login').on('click', function () {
+                // 关闭登录模态框
+                $('#SignIn').modal('hide');
+                // 去除登录注册所在li
+                $('a.SignIn').parent().hide();
+                // 添加头像
+                // 定义一个新li容器
+                var newLi = $('<li class="dropdown li-head"></li>');
+                // 定义一个a
+                var newA = $('<a href="#" class="dropdown-toggle user_head" data-toggle="dropdown"></a>');
+                // 去掉a的padding-top
+                newA.css({
+                    'paddingTop': 0,
+                    'margin-top': -6
+                });
+                // 定义一个菜单menu
+                var newMenu = $('<ul class="dropdown-menu"></ul>');
+                // 选项一
+                var op1 = $('<li><a href="#"><i class="icon-bar icon-user" style="margin-right:3px !important;"></i> 我的主页</a></li>');
+                // 选项二
+                var op2 = $('<li><a href="#"><i class="icon-bar icon-set" style="margin-right:3px !important;"></i> 设置</a></li>');
+                // 选项三
+                var op3 = $('<li><a href="#" id="logOut"><i class="icon-bar icon-out" style="margin-right:3px !important;"></i> 退出</a></li>');
+                // 选项添加进ul菜单
+                newMenu.append(op1).append(op2).append(op3);
+                // 定义头像
+                var newHead = $('<img src="./img/msg/zuopin_msg_img_qq.png" style="width:60px;height:60px;" class="img-responsive">');
+                // 头像加入新a
+                newA.append(newHead);
+                // a加入li容器
+                newLi.append(newA);
+                // 菜单加入li容器
+                newLi.append(newMenu);
+                // li容器加入导航
+                $('ul.my-menu').append(newLi);
+
+                $('ul.my-menu li a#logOut').on('click', function () {
+                    $('li.li-head').hide();
+                    $('ul.my-menu li a.SignIn').parent().show();
+                })
+
+            });
+        })
+    </script>
+    <script type='text/javascript' src='https://cdn.bootcss.com/wow/1.1.2/wow.min.js'></script>
+    <script type='text/javascript'>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

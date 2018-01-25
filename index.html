@@ -1,0 +1,1921 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShineLAB</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" class="css">
+    <!-- 引入swiper的css文件 -->
+    <link rel="stylesheet" href="./css/swiper-4.1.0.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" class="css">
+    <!-- 引入basic.css -->
+    <link rel="stylesheet" href="./css/basic.css" class="css">
+    <link rel="stylesheet" href="./css/index.css" class="css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <!-- 引入swiper的js文件 -->
+    <script src="./js/swiper-4.1.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <!-- header-导航容器，固定用 -->
+    <div class="header">
+        <div class="container top-nav">
+            <nav class="navbar" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" id='logo'></a>
+                        <!-- 汉堡按钮-sm下显示导航元素 -->
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#topmenu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- 导航元素部分 -->
+                    <div class="collapse navbar-collapse my-collapse" id="topmenu">
+                        <!-- 导航元素菜单 -->
+                        <ul class="nav navbar-nav navbar-right my-menu">
+                            <li class='active'>
+                                <a href="#">
+                                    <i class="fa fa-home"></i> 首页</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-comments-o"></i> 交流社区</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-play-circle"></i> 在线课堂</a>
+                            </li>
+                            <!-- 下拉菜单 -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-newspaper-o"></i> 最新动态
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-bar icon-works"></i> 创客作品</a>
+                                    </li>
+                                    <li>
+                                        <a href="./news.html">
+                                            <i class="icon-bar icon-news"></i> 哨音新闻</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-code"></i> 实验室
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-child"></i> Stratch在线创作</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-codepen"></i> CodeBear在线创作</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-android"></i> App Inventer手机编程</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-microchip"></i> CodeAir在线创作</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-sliders"></i> SimAir在线仿真</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-download"></i> 资源下载</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-envelope"></i> 关于我们</a>
+                            </li>
+                            <li>
+                                <!-- 点击触发模态框(登录、注册) -->
+                                <a href="#" data-toggle='modal' data-target='#SignIn' data-backdrop='static' class='SignIn'>
+                                    <span style='margin-right:18px;' class='hidden-xs'>|</span>
+                                    <i class="fa fa-sign-in"></i> 登录/注册</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- banner -->
+    <div class="banner">
+
+        <!-- <div class="row"> -->
+        <div class="swiper-container" id='swiper_banner'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="###">
+                        <img src="./img/banner1.png" alt="" class='img-responsive'>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="###">
+                        <img src="./img/banner2.png" alt="" class='img-responsive'>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="###">
+                        <img src="./img/banner03.jpg" alt="" class='img-responsive'>
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next hidden-xs hidden-sm"></div>
+            <div class="swiper-button-prev hidden-xs hidden-sm"></div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <!-- 公開課部分 -->
+    <div class="classes">
+        <div class="container main">
+            <h4 class='title col-md-12'>公开课</h4>
+            <h4 class='subtitle col-md-12'>At First Sight</h4>
+            <div class="row">
+                <div class="col-md-12 classes_choice">
+                    <!-- 課程菜單 -->
+                    <ul id="classTab" class="nav nav-tabs">
+                        <li class='active'>
+                            <a href="#first" data-toggle="tab">第一课</a>
+                        </li>
+                        <li>
+                            <a href="#second" data-toggle="tab">第二课</a>
+                        </li>
+                        <li>
+                            <a href="#third" data-toggle="tab">第三课</a>
+                        </li>
+                        <li>
+                            <a href="#forth" data-toggle="tab">第四课</a>
+                        </li>
+                        <li>
+                            <a href="#fifth" data-toggle="tab">第五课</a>
+                        </li>
+                    </ul>
+                    <!-- 詳細菜單内容 -->
+                    <div id="myTabContent" class="tab-content">
+                        <!-- 第一课 -->
+                        <div class="clearfix tab-pane fade in active class_detail" id="first">
+                            <div class="col-md-6 col-sm-6 col-xs-12 show">
+                                <!-- 触发模态框，同时传递url和title -->
+                                <a href="#" data-toggle='modal' data-target='#VideoModal-public' data-backdrop='static' class='pVideo' vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4'
+                                    data-title='公开课编程的世界 - 第一课' data-number='1'>
+                                    <img src="./img/class1.jpg" alt="" class='img-responsive'>
+                                    <!-- 按钮 -->
+                                    <i class="fa fa-play-circle-o fa-5x"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                <h4 class='title info-title'>编程世界1</h4>
+                                <p class='information'>计算机已经成为人类生活的重要组成部分，每天，我們所使用电脑，手机以及其他智能设备都与計算机有关</p>
+                            </div>
+                            <a href="#" class='pull-right more'>MORE</a>
+                        </div>
+                        <!-- 第二课 -->
+                        <div class="clearfix tab-pane fade in class_detail" id="second">
+                            <div class="col-md-6 col-sm-6 col-xs-12 show">
+                                <!-- 触发模态框，同时传递url和title -->
+                                <a href="#" data-toggle='modal' data-target='#VideoModal-public' data-backdrop='static' class='pVideo' vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4'
+                                    data-title='公开课编程的世界 - 第二课' data-number='2'>
+                                    <img src="./img/class2.jpg" alt="" class='img-responsive'>
+                                    <!-- 按钮 -->
+                                    <i class="fa fa-play-circle-o fa-5x"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                <h4 class='title info-title'>编程世界2</h4>
+                                <p class='information'>计算机已经成为人类生活的重要组成部分，每天，我們所使用电脑，手机以及其他智能设备都与計算机有关</p>
+                            </div>
+                            <a href="#" class='pull-right more'>MORE</a>
+                        </div>
+                        <!-- 第三课 -->
+                        <div class="clearfix tab-pane fade in class_detail" id="third">
+                            <div class="col-md-6 col-sm-6 col-xs-12 show">
+                                <!-- 触发模态框，同时传递url和title -->
+                                <a href="#" data-toggle='modal' data-target='#VideoModal-public' data-backdrop='static' class='pVideo' vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4'
+                                    data-title='公开课编程的世界 - 第三课' data-number='3'>
+                                    <img src="./img/class3.jpg" alt="" class='img-responsive'>
+                                    <!-- 按钮 -->
+                                    <i class="fa fa-play-circle-o fa-5x"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                <h4 class='title info-title'>编程世界3</h4>
+                                <p class='information'>计算机已经成为人类生活的重要组成部分，每天，我們所使用电脑，手机以及其他智能设备都与計算机有关</p>
+                            </div>
+                            <a href="#" class='pull-right more'>MORE</a>
+                        </div>
+                        <!-- 第四课 -->
+                        <div class="clearfix tab-pane fade in class_detail" id="forth">
+                            <div class="col-md-6 col-sm-6 col-xs-12 show">
+                                <!-- 触发模态框，同时传递url和title -->
+                                <a href="#" data-toggle='modal' data-target='#VideoModal-public' data-backdrop='static' class='pVideo' vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4'
+                                    data-title='公开课编程的世界 - 第四课' data-number='4'>
+                                    <img src="./img/class4.jpg" alt="" class='img-responsive'>
+                                    <!-- 按钮 -->
+                                    <i class="fa fa-play-circle-o fa-5x"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                <h4 class='title info-title'>编程世界4</h4>
+                                <p class='information'>计算机已经成为人类生活的重要组成部分，每天，我們所使用电脑，手机以及其他智能设备都与計算机有关</p>
+                            </div>
+                            <a href="#" class='pull-right more'>MORE</a>
+                        </div>
+                        <!-- 第五课 -->
+                        <div class="clearfix tab-pane fade in class_detail" id="fifth">
+                            <div class="col-md-6 col-sm-6 col-xs-12 show">
+                                <!-- 触发模态框，同时传递url和title -->
+                                <a href="#" data-toggle='modal' data-target='#VideoModal-public' data-backdrop='static' class='pVideo' vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4'
+                                    data-title='公开课编程的世界 - 第五课' data-number='5'>
+                                    <img src="./img/class5.jpg" alt="" class='img-responsive'>
+                                    <!-- 按钮 -->
+                                    <i class="fa fa-play-circle-o fa-5x"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                <h4 class='title info-title'>编程世界5</h4>
+                                <p class='information'>计算机已经成为人类生活的重要组成部分，每天，我們所使用电脑，手机以及其他智能设备都与計算机有关</p>
+                                <!-- <a href="#">
+                                    <h4>MORE</h4>
+                                </a> -->
+                            </div>
+                            <a href="#" class='pull-right more'>MORE</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 編程一小時 -->
+    <div class="classes one_pro">
+        <div class="container main">
+            <h4 class='title col-md-12'>编程一小時</h4>
+            <h4 class='subtitle col-md-12'>Amusing Programming</h4>
+            <div class="row">
+                <!-- md\lg下的轮播 -->
+                <div class="swiper-container game_choice hidden-xs hidden-sm" id='swiper_pro1'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/migong.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>
+                                        <a href="#">经典迷宫</a>
+                                    </h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/ice.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>
+                                        <a href="#">冰雪奇缘</a>
+                                    </h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/bird.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>
+                                        <a href="#">飞扬的小鸟</a>
+                                    </h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/war.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>
+                                        <a href="#">星球大战</a>
+                                    </h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                </div>
+                <!-- xs下的轮播 -->
+                <div class="swiper-container game_choice visible-xs" id='swiper_pro2'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/migong.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>经典迷宫</h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/ice.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>冰雪奇缘</h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/bird.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>飞扬的小鸟</h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/war.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>星球大战</h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- sm下的轮播 -->
+                <div class="swiper-container game_choice visible-sm" id='swiper_pro3'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/migong.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>经典迷宫</h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/ice.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>冰雪奇缘</h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/bird.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>飞扬的小鸟</h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href='#' class='class-img'>
+                                    <img src="./img/war.jpg" alt="" class='img-responsive'>
+                                </a>
+                                <div class="caption">
+                                    <h4 class='title info-title'>星球大战</h4>
+                                    <p class='information'>尝试计算机科学的基本知识，控制小精灵们到达他们的目的地。文字介紹文字介紹</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 精品課程 -->
+    <div class="classes selected">
+        <div class="container main">
+            <h4 class='title col-md-12'>精品课程</h4>
+            <h4 class='subtitle col-md-12'>Selected Choices</h4>
+            <div class="row clearfix">
+                <div class="col-md-12 more clearfix">
+                    <a href="#" class='pull-right more'>MORE</a>
+                </div>
+                <ul class="col-md-12 selected_choice">
+                    <li class="col-sm-6 col-md-4 col-xs-12">
+                        <div class="thumbnail">
+                            <a href='###' data-toggle='modal' data-target='#VideoModal-classes' data-backdrop='static' class='mvideo class-img' vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4'
+                                data-title='App Inventor Level 1'>
+                                <img src="https://shinelab-img.nos-eastchina1.126.net/d3e38b12d03384a74b27bfd9cdacb470.jpg" alt="" class='img-responsive'>
+                                <!-- 按钮 -->
+                                <i class="fa fa-play-circle-o fa-5x"></i>
+                            </a>
+                            <h4 class="title info-title">
+                                <div class="t-title">
+                                    <a href="#">App Inventor Level 1</a>
+                                </div>
+
+                            </h4>
+                            <div class="caption">
+                                <div class='clearfix col-md-12 class_info'>
+                                    <span>教师:
+                                        <a href='#'>clh </a>
+                                    </span>
+                                    <span>
+                                        <i class='fa fa-users'></i> 10 </span>
+                                    <span>
+                                        <i class='fa fa-calendar'></i> 2017.10.02</span>
+
+                                </div>
+
+                                <p class="information">本阶段课程將以ShineLAB自主研发的图形化在线开发系统CodeBear为基础，引领同学们走进程序开发的世界.</p>
+                            </div>
+                            <!-- 定位按鈕組 -->
+                            <div class="btn_group">
+                                <button class='appointment' data-toggle='modal' data-target='#subscribe' data-backdrop='static'>预约课程</button>
+                                <button class='online'>线上课程</button>
+                                <button class='buy'>立即购买</button>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-4 col-xs-12">
+                        <div class="thumbnail">
+                            <a href='###' data-toggle='modal' data-target='#VideoModal-classes' data-backdrop='static' class='mvide class-img' vurl=''
+                                data-title='CodeBear Level 1'>
+                                <img src="https://shinelab-img.nos-eastchina1.126.net/news%2Fchenlonghucodebear.jpg" alt="" class='img-responsive'>
+                                <!-- 按钮 -->
+                                <i class="fa fa-play-circle-o fa-5x"></i>
+                            </a>
+                            <h4 class="title info-title">
+                                <div class="t-title">
+                                    <a href="#">CodeBear Level 1</a>
+                                </div>
+
+                            </h4>
+                            <div class="caption">
+                                <div class='clearfix col-md-12 class_info'>
+                                    <span>教师:
+                                        <a href='#'>clh </a>
+                                    </span>
+                                    <span>
+                                        <i class='fa fa-users'></i> 10 </span>
+                                    <span>
+                                        <i class='fa fa-calendar'></i> 2017.10.02</span>
+
+                                </div>
+                                <p class="information">本阶段课程將以ShineLAB自主研发的图形化在线开发系统CodeBear为基础，引领同学们走进程序开发的世界.</p>
+                            </div>
+                            <!-- 定位按鈕組 -->
+                            <div class="btn_group">
+                                <button class='appointment' data-toggle='modal' data-target='#subscribe' data-backdrop='static'>预约课程</button>
+                                <button class='online'>线上课程</button>
+                                <button class='buy'>立即购买</button>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-4 col-xs-12">
+                        <div class="thumbnail">
+                            <a href='###' data-toggle='modal' data-target='#VideoModal-classes' data-backdrop='static' class='mvideo class-img' vurl=''
+                                data-title='CodeBear Level 2'>
+                                <img src="https://shinelab-img.nos-eastchina1.126.net/68c0741a9ae96039e6c657754742ad0a.jpg" alt="" class='img-responsive'>
+                                <!-- 按钮 -->
+                                <i class="fa fa-play-circle-o fa-5x"></i>
+                            </a>
+                            <h4 class="title info-title">
+                                <div class="t-title">
+                                    <a href="#">CodeBear Level 2</a>
+                                </div>
+
+                            </h4>
+                            <div class="caption">
+                                <div class='clearfix col-md-12 class_info'>
+                                    <span>教师:
+                                        <a href='#'>clh </a>
+                                    </span>
+                                    <span>
+                                        <i class='fa fa-users'></i> 10 </span>
+                                    <span>
+                                        <i class='fa fa-calendar'></i> 2017.10.02</span>
+
+                                </div>
+                                <p class="information">本阶段课程將以ShineLAB自主研发的图形化在线开发系统CodeBear为基础，引领同学们走进程序开发的世界.</p>
+                            </div>
+                            <!-- 定位按鈕組 -->
+                            <div class="btn_group">
+                                <button class='appointment' data-toggle='modal' data-target='#subscribe' data-backdrop='static'>预约课程</button>
+                                <button class='online'>线上课程</button>
+                                <button class='buy'>立即购买</button>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-4 col-xs-12">
+                        <div class="thumbnail">
+                            <a href='###' data-toggle='modal' data-target='#VideoModal-classes' data-backdrop='static' class='mvideo class-img' vurl=''
+                                data-title='CodeBear Level 3'>
+                                <img src="https://shinelab-img.nos-eastchina1.126.net/d3e38b12d03384a74b27bfd9cdacb470.jpg" alt="" class='img-responsive'>
+                                <!-- 按钮 -->
+                                <i class="fa fa-play-circle-o fa-5x"></i>
+                            </a>
+                            <h4 class="title info-title">
+                                <div class="t-title">
+                                    <a href="#">CodeBear Level 3</a>
+                                </div>
+
+                            </h4>
+                            <div class="caption">
+                                <div class='clearfix col-md-12 class_info'>
+                                    <span>教师:
+                                        <a href='#'>clh </a>
+                                    </span>
+                                    <span>
+                                        <i class='fa fa-users'></i> 10 </span>
+                                    <span>
+                                        <i class='fa fa-calendar'></i> 2017.10.02</span>
+
+                                </div>
+                                <p class="information">本阶段课程將以ShineLAB自主研发的图形化在线开发系统CodeBear为基础，引领同学们走进程序开发的世界.</p>
+                            </div>
+                            <!-- 定位按鈕組 -->
+                            <div class="btn_group">
+                                <button class='appointment' data-toggle='modal' data-target='#subscribe' data-backdrop='static'>预约课程</button>
+                                <button class='online'>线上课程</button>
+                                <button class='buy'>立即购买</button>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-4 col-xs-12">
+                        <div class="thumbnail">
+                            <a href='###' data-toggle='modal' data-target='#VideoModal-classes' data-backdrop='static' class='mvideo class-img' vurl=''
+                                data-title='CodeBear Level 4'>
+                                <img src="https://shinelab-img.nos-eastchina1.126.net/68c0741a9ae96039e6c657754742ad0a.jpg" alt="" class='img-responsive'>
+                                <!-- 按钮 -->
+                                <i class="fa fa-play-circle-o fa-5x"></i>
+                            </a>
+                            <h4 class="title info-title">
+                                <div class="t-title">
+                                    <a href="#">CodeBear Level 4</a>
+                                </div>
+
+                            </h4>
+                            <div class="caption">
+                                <div class='clearfix col-md-12 class_info'>
+                                    <span>教师:
+                                        <a href='#'>clh </a>
+                                    </span>
+                                    <span>
+                                        <i class='fa fa-users'></i> 10 </span>
+                                    <span>
+                                        <i class='fa fa-calendar'></i> 2017.10.02</span>
+
+                                </div>
+                                <p class="information">本阶段课程將以ShineLAB自主研发的图形化在线开发系统CodeBear为基础，引领同学们走进程序开发的世界.</p>
+                            </div>
+                            <!-- 定位按鈕組 -->
+                            <div class="btn_group">
+                                <button class='appointment' data-toggle='modal' data-target='#subscribe' data-backdrop='static'>预约课程</button>
+                                <button class='online'>线上课程</button>
+                                <button class='buy'>立即购买</button>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-4 col-xs-12">
+                        <div class="thumbnail">
+                            <a href='###' data-toggle='modal' data-target='#VideoModal-classes' data-backdrop='static' class='mvideo class-img' vurl=''
+                                data-title='CodeBear Level 5'>
+                                <img src="https://shinelab-img.nos-eastchina1.126.net/d3e38b12d03384a74b27bfd9cdacb470.jpg" alt="" class='img-responsive'>
+                                <!-- 按钮 -->
+                                <i class="fa fa-play-circle-o fa-5x"></i>
+                            </a>
+                            <h4 class="title info-title">
+                                <div class="t-title">
+                                    <a href="#">CodeBear Level 5</a>
+                                </div>
+
+                            </h4>
+                            <div class="caption">
+                                <div class='clearfix col-md-12 class_info'>
+                                    <span>教师:
+                                        <a href='#'>clh </a>
+                                    </span>
+                                    <span>
+                                        <i class='fa fa-users'></i> 10 </span>
+                                    <span>
+                                        <i class='fa fa-calendar'></i> 2017.10.02</span>
+
+                                </div>
+                                <p class="information">本阶段课程將以ShineLAB自主研发的图形化在线开发系统CodeBear为基础，引领同学们走进程序开发的世界.</p>
+                            </div>
+                            <!-- 定位按鈕組 -->
+                            <div class="btn_group">
+                                <button class='appointment' data-toggle='modal' data-target='#subscribe' data-backdrop='static'>预约课程</button>
+                                <button class='online'>线上课程</button>
+                                <button class='buy'>立即购买</button>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 新闻动态 -->
+    <div class="classes news">
+        <div class="container main">
+            <h4 class='title col-md-12'>新闻动态</h4>
+            <h4 class='subtitle col-md-12'>ShineLAB News</h4>
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12 show hidden-xs">
+                    <a href="#">
+                        <img src="https://shinelab-img.nos-eastchina1.126.net/ec5f804ab752536b3b55e7fdaceb24f5.png" alt="1" class='img-responsive'>
+                    </a>
+                    <a href="#">
+                        <img src="https://shinelab-img.nos-eastchina1.126.net/f689b0b0051161ef60ef008882fa47c4.png" alt="2" class='img-responsive'>
+                    </a>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12 info">
+                    <ul class="ul_news">
+                        <li class=''>
+                            <a href="#">
+                                <p>
+                                    <i class='fa fa-newspaper-o'></i> 白宫和facebook等科技巨头共同斥资5亿美元，支持美国K-12编程教育</p>
+                            </a>
+                            <span>2017-05-12</span>
+                        </li>
+                        <li class='clearfix'>
+                            <a href="#">
+                                <p>
+                                    <i class='fa fa-newspaper-o'></i> 2017亚太青少年机器人竞赛中国区总决赛在兰州开幕</p>
+                            </a>
+                            <span>2017-08-24</span>
+                        </li>
+                        <li class='clearfix'>
+                            <a href="#">
+                                <p>
+                                    <i class='fa fa-newspaper-o'></i> 2017亚太青少年机器人竞赛中国区总决赛在兰州开幕</p>
+                            </a>
+                            <span>2017-08-24</span>
+                        </li>
+                        <li class='clearfix'>
+                            <a href="#">
+                                <p>
+                                    <i class='fa fa-newspaper-o'></i> 2017亚太青少年机器人竞赛中国区总决赛在兰州开幕</p>
+                            </a>
+                            <span>2017-08-24</span>
+                        </li>
+                        <li class='clearfix'>
+                            <a href="#">
+                                <p>
+                                    <i class='fa fa-newspaper-o'></i> 2017亚太青少年机器人竞赛中国区总决赛在兰州开幕</p>
+                            </a>
+                            <span>2017-08-24</span>
+                        </li>
+                        <li class='clearfix'>
+                            <a href="#">
+                                <p>
+                                    <i class='fa fa-newspaper-o'></i> 2017亚太青少年机器人竞赛中国区总决赛在兰州开幕</p>
+                            </a>
+                            <span>2017-08-24</span>
+                        </li>
+                        <li class='clearfix'>
+                            <a href="#">
+                                <p>
+                                    <i class='fa fa-newspaper-o'></i> 2017亚太青少年机器人竞赛中国区总决赛在兰州开幕</p>
+                            </a>
+                            <span>2017-08-24</span>
+                        </li>
+                        <li class='clearfix'>
+                            <a href="#">
+                                <p>
+                                    <i class='fa fa-newspaper-o'></i> 2017亚太青少年机器人竞赛中国区总决赛在兰州开幕</p>
+                            </a>
+                            <span>2017-08-24</span>
+                        </li>
+                        <!-- 更多 -->
+                        <a href="#" class="moreInfo">
+                            MORE
+                        </a>
+                    </ul>
+
+                </div>
+                <div class="col-md-5 col-sm-12 col-xs-12 show visible-xs">
+                    <a href="#">
+                        <img src="https://shinelab-img.nos-eastchina1.126.net/ec5f804ab752536b3b55e7fdaceb24f5.png" alt="1" class='img-responsive'>
+                    </a>
+                    <a href="#">
+                        <img src="https://shinelab-img.nos-eastchina1.126.net/f689b0b0051161ef60ef008882fa47c4.png" alt="2" class='img-responsive'>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 为什么学习编程 -->
+    <div class="classes why">
+        <div class="container main">
+            <h4 class='title col-md-12'>为什么学习编程</h4>
+            <h4 class='subtitle col-md-12'>Why Learn To Program</h4>
+            <div class="row">
+                <ul class="col-md-12 reasons">
+                    <li class="col-sm-3 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./img/great1.png" alt="" class='img-responsive'>
+                            <div class="caption">
+                                <h4 class='title info-title'>提升智商、锻炼思维</h4>
+                                <p class='information'>缜密的思维是编程的关键</p>
+                                <p class='information'>编程是最有效的</p>
+                                <p class='information'>提升逻辑思维的方式</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-3 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./img/great2.png" alt="" class='img-responsive'>
+                            <div class="caption">
+                                <h4 class='title info-title'>耐心细心、专心恒心</h4>
+                                <p class='information'>编程是严谨的思维过程</p>
+                                <p class='information'>需要耐心细心控制过程</p>
+                                <p class='information'>专心恒心输出结果</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-3 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./img/great3.png" alt="" class='img-responsive'>
+                            <div class="caption">
+                                <h4 class='title info-title'>考试加分、升学助力</h4>
+                                <p class='information'>编程是严谨的思维过程</p>
+                                <p class='information'>需要耐心细心控制过程</p>
+                                <p class='information'>专心恒心输出结果</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-3 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./img/great4.png" alt="" class='img-responsive'>
+                            <div class="caption">
+                                <h4 class='title info-title'>透视游戏、拒绝沉迷</h4>
+                                <p class='information'>学习编程，知悉游戏原理</p>
+                                <p class='information'>有效防止青少年沉迷游戏</p>
+                                <p class='information'>玩游戏不如做游戏</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 优秀创意 -->
+    <div class="classes ideas">
+        <div class="container main">
+            <h4 class='title col-md-12'>优秀创意</h4>
+            <h4 class='subtitle col-md-12'>Great ideas</h4>
+            <!-- 通用more -->
+            <div class="row clearfix">
+                <div class="col-md-12 more clearfix">
+                    <a href="#" class='pull-right more'>MORE</a>
+                </div>
+                <div class="all_zuopin">
+                    <ul class="col-md-12 ideas_list clearfix">
+                        <li class="col-sm-6 col-md-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="#" data-toggle='modal' data-target='#VideoModal-classes' data-backdrop='static' class='mvideo class-img' vurl=''
+                                    data-title='智能手机控制的4轴无人小车设计'>
+                                    <img src="https://shinelab-img.nos-eastchina1.126.net/ec5f804ab752536b3b55e7fdaceb24f5.png" alt="" class='img-responsive'>
+                                    <!-- 按钮 -->
+                                    <i class="fa fa-play-circle-o fa-5x"></i>
+                                </a>
+                                <div class="caption">
+                                    <h4 class="title info-title">
+                                        <a href="#">智能手机控制的4轴无人小车设计</a>
+                                    </h4>
+                                    <p class='information'>本课程将设计一款智能手机控制的4轴无人小车，课程将从线路连接到电路焊接，电机、驱动器等安装，蓝牙模块接线，代码编译下载。</p>
+                                    <div class='foot'>
+                                        <span>
+                                            <i class="fa fa-eye">&nbsp;0&nbsp;|</i>
+                                            <i class="fa fa-star"></i>&nbsp;5&nbsp;|&nbsp;
+                                            <i class="fa fa-rmb"></i>&nbsp;3.00</span>
+                                    </div>
+                                    <div class="foot">
+                                        <span>
+                                            <i class="fa fa-child text-warning">&nbsp;clh&nbsp;&nbsp;|&nbsp;&nbsp;</i>
+                                            <i class="fa fa-birthday-cake text-warning"></i>&nbsp;&nbsp;12岁以上&nbsp;&nbsp;|&nbsp;&nbsp;
+                                            <i class="fa fa-bank text-warning"></i>&nbsp;上海</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-6 col-md-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="#" data-toggle='modal' data-target='#VideoModal-classes' data-backdrop='static' class='mvideo class-img' vurl='https://shinelab.nos-eastchina1.126.net/major/video1-3.mp4'
+                                    data-title='超声波雷达扫描设计仪'>
+                                    <img src="https://shinelab-img.nos-eastchina1.126.net/f689b0b0051161ef60ef008882fa47c4.png" alt="" class='img-responsive'>
+                                    <!-- 按钮 -->
+                                    <i class="fa fa-play-circle-o fa-5x"></i>
+                                </a>
+                                <div class="caption">
+                                    <h4 class="title info-title">
+                                        <a href="#">超声波雷达扫描设计仪</a>
+                                    </h4>
+                                    <p class='information'>本课程将设计一款超声波雷达扫描仪，用于扫描障碍物的位置和距离，详细介绍了软件程序设计，系统采用Arduino mega作为主控板。</p>
+                                    <div class='foot'>
+                                        <span>
+                                            <i class="fa fa-eye">&nbsp;0&nbsp;|</i>
+                                            <i class="fa fa-star"></i>&nbsp;5&nbsp;|&nbsp;
+                                            <i class="fa fa-rmb"></i>&nbsp;3.00</span>
+                                    </div>
+                                    <div class="foot">
+                                        <span>
+                                            <i class="fa fa-child text-warning">&nbsp;clh&nbsp;&nbsp;|&nbsp;&nbsp;</i>
+                                            <i class="fa fa-birthday-cake text-warning"></i>&nbsp;&nbsp;12岁以上&nbsp;&nbsp;|&nbsp;&nbsp;
+                                            <i class="fa fa-bank text-warning"></i>&nbsp;上海</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-6 col-md-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="#" data-toggle='modal' data-target='#VideoModal-classes' data-backdrop='static' class='mvideo class-img' vurl='https://shinelab.nos-eastchina1.126.net/major/video1-5.mp4'
+                                    data-title='超级马里奥游戏开发'>
+                                    <img src="https://shinelab-img.nos-eastchina1.126.net/970964dc2189934418a12f7d654b4db1.png" alt="" class='img-responsive'>
+                                    <!-- 按钮 -->
+                                    <i class="fa fa-play-circle-o fa-5x"></i>
+                                </a>
+                                <div class="caption">
+                                    <h4 class="title info-title">
+                                        <a href="#">超级马里奥游戏开发</a>
+                                    </h4>
+                                    <p class='information'>本课程将教大家开发超级马里奥游戏，程序采用Python语言编写，实现了各种功能和动态效果，并对其代码进行了详细的分析。</p>
+                                    <div class='foot'>
+                                        <span>
+                                            <i class="fa fa-eye">&nbsp;0&nbsp;|</i>
+                                            <i class="fa fa-star"></i>&nbsp;5&nbsp;|&nbsp;
+                                            <i class="fa fa-rmb"></i>&nbsp;3.00</span>
+                                    </div>
+                                    <div class="foot">
+                                        <span>
+                                            <i class="fa fa-child text-warning">&nbsp;clh&nbsp;&nbsp;|&nbsp;&nbsp;</i>
+                                            <i class="fa fa-birthday-cake text-warning"></i>&nbsp;&nbsp;12岁以上&nbsp;&nbsp;|&nbsp;&nbsp;
+                                            <i class="fa fa-bank text-warning"></i>&nbsp;上海</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 我们的团队 -->
+    <div class="classes team">
+        <div class="container main">
+            <h4 class='title col-md-12'>我们的团队</h4>
+            <h4 class='subtitle col-md-12'>Our Team</h4>
+            <div class="row" style='padding:0 0px;'>
+                <!-- 适应md\lg的轮播 -->
+                <div class="swiper-container hidden-sm hidden-xs" id='swiper_team1'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <div class='img-head img-head1'></div>
+                                <!-- <img src="./img/img_chen.png" alt="" class='img-responsive' style='border:1px solid #000;'> -->
+                                <div class="caption">
+                                    <h4 class='title info-title'>陈龙虎</h4>
+                                    <p class='degrees'>计算机硕士 高级电子工程师</p>
+                                    <p class='information'>ShineLAB联合创始人，原公安部软件工程师，助理研究员，上海健康医学院外聘高级讲师，拥有丰富的软硬件设计经验和丰富的科技创新课程教学经验。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <div class="img-head img-head2"></div>
+                                <!-- <img src="./img/img_meng.png" alt="" class='img-responsive'> -->
+                                <div class="caption">
+                                    <h4 class='title info-title'>孟小玉</h4>
+                                    <p class='degrees'>复旦大学 电子工程系 硕士</p>
+                                    <p class='information'>ShineLAB创始人，复旦大学电子工程系硕士，高级电子工程师，三年多创客培训经验，八年多电子设计经验，软硬件皆精通。具有丰富的教学研发经验，授课风趣幽默深受学生喜爱。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <div class="img-head img-head3"></div>
+                                <!-- <img src="./img/img_steven.png" alt="" class='img-responsive'> -->
+                                <div class="caption">
+                                    <h4 class='title info-title'>Steven</h4>
+                                    <p class='degrees'>MIT高级电子工程师 计算机工程师</p>
+                                    <p class='information'>美国MIT计算机工程师，ShineLAB顾问，Steven一直致力于青少年创客教育，有丰富的教学经验，其制定的课程体系内容丰富、极具创新。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <div class="img-head img-head4"></div>
+                                <!-- <img src="./img/img_chen.png" alt="" class='img-responsive'> -->
+                                <div class="caption">
+                                    <h4 class='title info-title'>邢成思</h4>
+                                    <p class='degrees'>高级工程师</p>
+                                    <p class='information'>计算机专业硕士，高级计算机工程师，创客达人，Hack爱好者</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <div class="img-head img-head5"></div>
+                                <!-- <img src="./img/img_meng.png" alt="" class='img-responsive'> -->
+                                <div class="caption">
+                                    <h4 class='title info-title'>Dr.Sun</h4>
+                                    <p class='degrees'>课程及技术顾问</p>
+                                    <p class='information'>美国Texas A&M 大学博士，美国海归精英，STEAM教育推广者</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                </div>
+                <!-- 适应sm\xs的轮播 -->
+                <div class="swiper-container hidden-md hidden-lg" id='swiper_team2'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <div class="img-head img-head1"></div>
+                                <div class="caption">
+                                    <h4 class='title info-title'>陈龙虎</h4>
+                                    <p class='degrees'>计算机硕士 高级电子工程师</p>
+                                    <p class='information'>ShineLAB联合创始人，原公安部软件工程师，助理研究员，上海健康医学院外聘高级讲师，拥有丰富的软硬件设计经验和丰富的科技创新课程教学经验。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <div class="img-head img-head2"></div>
+                                <div class="caption">
+                                    <h4 class='title info-title'>孟小玉</h4>
+                                    <p class='degrees'>复旦大学 电子工程系 硕士</p>
+                                    <p class='information'>ShineLAB创始人，复旦大学电子工程系硕士，高级电子工程师，三年多创客培训经验，八年多电子设计经验，软硬件皆精通。具有丰富的教学研发经验，授课风趣幽默深受学生喜爱。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <div class="img-head img-head3"></div>
+                                <div class="caption">
+                                    <h4 class='title info-title'>Steven</h4>
+                                    <p class='degrees'>MIT高级电子工程师 计算机工程师</p>
+                                    <p class='information'>美国MIT计算机工程师，ShineLAB顾问，Steven一直致力于青少年创客教育，有丰富的教学经验，其制定的课程体系内容丰富、极具创新。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <div class="img-head img-head4"></div>
+                                <div class="caption">
+                                    <h4 class='title info-title'>邢成思</h4>
+                                    <p class='degrees'>高级工程师</p>
+                                    <p class='information'>计算机专业硕士，高级计算机工程师，创客达人，Hack爱好者</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail">
+                                <div class="img-head img-head5"></div>
+                                <div class="caption">
+                                    <h4 class='title info-title'>Dr.Sun</h4>
+                                    <p class='degrees'>课程及技术顾问</p>
+                                    <p class='information'>美国Texas A&M 大学博士，美国海归精英，STEAM教育推广者</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 课程体系 -->
+    <div class="classes system">
+        <div class="container main">
+            <h4 class='title col-md-12'>课程体系</h4>
+            <h4 class='subtitle col-md-12'>Course System</h4>
+            <div class="row">
+                <img src="./img/system.png" alt="" class='img-responsive'>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 预约课程 -->
+    <div class="yuyue clearfix hidden-xs">
+        <div class="container">
+            <span>ShineLAB带你和全球小伙伴一起用程序探索世界</span>
+            <button data-toggle='modal' data-target='#subscribe' data-backdrop='static'>预约课程</button>
+        </div>
+
+    </div>
+    <!-- xs适应预约课程 -->
+    <div class="yuyue visible-xs">
+        <button class='col-xs-4 col-xs-offset-4' style='font-size:12px;' data-toggle='modal' data-target='#subscribe' data-backdrop='static'>预约课程</button>
+        <span class='col-xs-12' style='font-size:12px;'>ShineLAB带你和全球小伙伴一起用程序探索世界</span>
+
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-4 col-xs-12 text-center link">
+                    <h4>联系方式</h4>
+                    <p>
+                        <i class='fa fa-phone'></i> 电话: 00-821-7604</p>
+                    <p>
+                        <i class='fa fa-map-marker'></i> 地址: 上海市浦东新区向城路15号锦城大厦8楼A室</p>
+                    <a href='mailto:support@shinelab.cn'>
+                        <p>
+                            <i class='fa fa-envelope'></i> 邮箱: support@shinelab.con</p>
+                    </a>
+                </div>
+                <div class="col-md-5 col-sm-4 col-xs-12 text-center cooperation">
+                    <h4>合作机构</h4>
+                    <p>MIT</p>
+                    <p>美国杜克大学</p>
+                    <p>复旦大学</p>
+                    <p>英国BBC公司</p>
+                    <p>谷歌</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12 clearfix text-center">
+                    <div class='code pull-right hidden-xs'>
+
+                    </div>
+                    <div class='code visible-xs'>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row end hidden-xs" style='margin-top:30px;'>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <a href='http://www.miitbeian.gov.cn'>沪ICP备17009462号</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    ©2017-2017,ShineLAB,All Rights Reserved
+                </div>
+                <div class="col-md-4 col-sm-4 text-right hidden-xs">
+                    <span class=''>Designed By ShineLAB Tech</span>
+                </div>
+            </div>
+            <div class="row end visible-xs text-center" style='margin-top:30px;'>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <a href='http://www.miitbeian.gov.cn'>沪ICP备17009462号</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    ©2017-2017,ShineLAB,All Rights Reserved
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span class=''>Designed By ShineLAB Tech</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- 浮动留言气泡 -->
+    <div class="bubble" data-show='false'>
+        <div class="bubble_msg">
+            <div class="bubble_msg-header">
+                <p class='text-canter'>联系我们</p>
+                <div class="close_msg">
+                    <i class="icon-bubble icon-close"></i>
+                    <!-- <img src="./img/msg/zuopin_msg_icon_close.png" alt="" class='img-responsive'> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-4 text-center">
+                    <div>
+                        <i class="icon-bubble icon-qq"></i>
+                        <p style='margin-top:14px;'>3387869560</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4 text-center">
+                    <div>
+                        <i class="icon-bubble icon-tele"></i>
+                        <p style='margin-top:14px;'>400-821-7604</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4 text-center">
+                    <div>
+                        <i class="icon-bubble icon-weixin"></i>
+                        <p style='margin-top:14px;'>微信公众号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 模态框部分 -->
+    <!-- 登录注册用 -->
+    <div class="modal fade" id='SignIn' tabindex="-1" role='dialog' aria-labelledby="SignInLabel" aria-hidden='true'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- 标签页 -->
+                    <ul id="Signs" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#Sign-in" data-toggle="tab">
+                                登录
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Sign-up" data-toggle="tab">
+                                注册
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <!-- 以下是登录部分 -->
+                    <div class="tab-pane fade in active" id="Sign-in">
+                        <form action="#" method='post' class='form-horizontal'>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="username" class='sr-only control-label col-xs-3'>用户名:</label>
+                                    <div class="input-group col-xs-6 col-xs-offset-3">
+                                        <div class="input-group-addon btn btn-warning">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <input type="text" class='input-small form-control' placeholder="用户名/邮箱" name='username' id='head_username'>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class='sr-only control-label col-xs-3'>密码:</label>
+                                    <div class="input-group col-xs-6 col-xs-offset-3">
+                                        <div class="input-group-addon btn btn-warning">
+                                            <i class="fa fa-lock"></i>
+                                        </div>
+                                        <input type="password" class='input-small form-control' placeholder="密码" name='password' id='head_password'>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <input type="button" class='btn btn-warning' id='head_login' value='登录'>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- 以下是注册部分 -->
+                    <div class="tab-pane fade" id="Sign-up">
+                        <form action="#" method='post' class='form-horizontal'>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="email" class='col-sm-3 control-label'>电子邮箱:</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" name='email' id='register_email' class='form-control' placeholder="请填写邮箱地址">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="username" class='col-sm-3 control-label'>用户名:</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" name='username' id='register_username' class='form-control' placeholder="请填写用户名">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class='col-sm-3 control-label'>密码:</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" name='password' id='register_password' class='form-control' placeholder="请填写密码">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password_confirm" class='col-sm-3 control-label'>确认密码:</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" name='password_confirm' id='register_confirm' class='form-control' placeholder="请确认密码">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tele" class='col-sm-3 control-label'>手机号码:</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" name='tele' id='register_tele' class='form-control' placeholder="请填写手机号码">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="check" class='col-sm-3 control-label'>验证码:</label>
+                                    <div class="col-sm-8" style='padding-left:0;'>
+                                        <div class="row">
+                                            <div class="col-xs-5">
+                                                <input type="text" name='check' id='register_check' class='form-control' placeholder="请填写验证码">
+                                            </div>
+                                            <input type="button" class='btn btn-success col-xs-5' id='get_check' value='获取验证码'>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <input type="button" class='btn btn-success' id='head_register' value='注册'>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 公选课程视频播放用 -->
+    <div class="modal fade" id='VideoModal-public' tabindex='-1' role='dialog' aria-labelledby="VideoLabel" aria-hidden='true'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <img src="./img/table-icon/video_close_icon_btn.png" alt="" class='img-responsive'>
+                    </button>
+                    <h4 class="modal-title" id="VideoLabel">视频Title</h4>
+                </div>
+                <div class="modal-body">
+                    <video id='video1' controls width='100%' src=""></video>
+                    <a class="video_play">
+                        <img src="./img/table-icon/play_icon_btn.png" alt="" class='img-responsive'>
+                    </a>
+
+                </div>
+                <div class="modal-footer">
+                    <!-- 额外选择栏 -->
+                    <div class="btn-group publicList col-xs-12">
+                        <button class="btn col-xs-2" vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4' data-title='公开课编程的世界 - 第一课'
+                            data-number='1'>第一课</button>
+                        <button class="btn col-xs-2" vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4' data-title='公开课编程的世界 - 第二课'
+                            data-number='2'>第二课</button>
+                        <button class="btn col-xs-2" vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4' data-title='公开课编程的世界 - 第三课'
+                            data-number='3'>第三课</button>
+                        <button class="btn col-xs-2" vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4' data-title='公开课编程的世界 - 第四课'
+                            data-number='4'>第四课</button>
+                        <button class="btn col-xs-2" vurl='https://inventor.nos-eastchina1.126.net/video%2FAppOpen.mp4' data-title='公开课编程的世界 - 第五课'
+                            data-number='5'>第五课</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- 课程视频播放用 -->
+    <div class="modal fade" id='VideoModal-classes' tabindex='-1' role='dialog' aria-labelledby="VideoLabel" aria-hidden='true'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <img src="./img/table-icon/video_close_icon_btn.png" alt="" class='img-responsive'>
+                    </button>
+                    <h4 class="modal-title" id="VideoLabel">视频Title</h4>
+                </div>
+                <div class="modal-body">
+                    <video id='video1' controls width='100%' src=""></video>
+                    <a class="video_play" data-target='classes'>
+                        <img src="./img/table-icon/play_icon_btn.png" alt="" class='img-responsive'>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <div class="describe">
+                        <span>开课时间: 2018-02-23</span>
+                        <span>适合年龄: 10岁以上</span>
+                        <span>上课人数: 30</span>
+                        <span>课时: 25课时</span>
+                        <span>上课时间: 9:00 - 18:00</span>
+                        <span>老师: CHL</span>
+                    </div>
+                    <div class="infos text-left">
+                        <p>
+                            本课程将教大家开发超级马里奥游戏，程序采用Python语言编写，实现了各种功能和动态效果，并对其代码进行了详细的分析。
+                        </p>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button data-toggle='modal' data-target='#subscribe' data-backdrop='static'>预约上课</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- 预约体验 -->
+    <div class="modal fade" id='subscribe' tabindex='-1' role='dialog' aria-labelledby="SubLabel" aria-hidden='true'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <img src="./img/table-icon/close_icon_btn.png" alt="" class='img-responsive'>
+                    </button>
+                    <h4 class="modal-title" id="SubLabel" style='font-weight:500;'>预约课程</h4>
+                </div>
+                <!-- 这里是表单 -->
+                <form action="#" class='subscribe'>
+                    <div class="modal-body">
+                        <!-- 这一行是姓名 -->
+                        <div class="row">
+                            <div class="input-group col-xs-10 col-xs-offset-1">
+                                <span class="input-group-addon">
+                                    <i class="icon-form icon-name">
+
+                                    </i>
+                                </span>
+                                <input type="text" class="form-control" name="stu_name" placeholder="学员姓名">
+                            </div>
+                            <div class="col-xs-1 text-left">
+                                <span class="text-danger ts">&nbsp;*</span>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- 这一行是年龄 -->
+                        <div class="row">
+                            <div class="input-group col-xs-10 col-xs-offset-1">
+                                <span class="input-group-addon">
+                                    <i class="icon-form icon-age">
+
+                                    </i>
+                                </span>
+                                <input type="text" class="form-control" name="stu_age" placeholder="学员年龄">
+                            </div>
+                            <div class="col-xs-1 text-left">
+                                <span class="text-danger ts">&nbsp;*</span>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- 这一行是课程选择 -->
+                        <div class="row">
+                            <div class="input-group col-xs-10 col-xs-offset-1">
+                                <span class="input-group-addon">
+                                    <i class="icon-form icon-classes">
+
+                                    </i>
+                                </span>
+                                <select name="stu_lesson" id="lesson" class="form-control">
+                                    <option value="0">选择体验课程</option>
+                                    <option value="1" selected="selected">冬令营</option>
+                                    <option value="2">CodeBear Level 1</option>
+                                    <option value="3">App Inventor Level 1</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-1 text-left">
+                                <span class="text-danger ts">&nbsp;*</span>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- 这一行是手机号码 -->
+                        <div class="row">
+                            <div class="input-group col-xs-10 col-xs-offset-1">
+                                <span class="input-group-addon">
+                                    <i class="icon-form icon-phone">
+
+                                    </i>
+                                </span>
+                                <input type="text" class='form-control' name='stu_phone' placeholder="手机号">
+                            </div>
+                            <div class="col-xs-1 text-left">
+                                <span class="text-danger ts">&nbsp;*</span>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- 这一行是验证码 -->
+                        <div class="row">
+                            <div class="input-group col-xs-5 col-xs-offset-1">
+                                <span class="input-group-addon">
+                                    <i class="icon-form icon-code">
+
+                                    </i>
+                                </span>
+                                <input class="form-control" type="text" id="check" name="check" value="" placeholder="验证码" />
+                            </div>
+                            <div class="col-xs-5">
+                                <button type="button" id="check_btn" class="btn btn-block">获取验证码</button>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- 显示隐藏内容 -->
+                        <p class="text-center" style="cursor: pointer;color:#ff9514;" id="more-choice">展开更多
+                            <span class='fa fa-caret-up'></span>
+                        </p>
+
+                        <!-- 包裹隐藏内容 -->
+                        <div hidden>
+                            <!-- 这一行是时间选择 -->
+                            <div class="row">
+                                <div class="input-group col-xs-10 col-xs-offset-1">
+                                    <span class="input-group-addon">
+                                        <i class="icon-form icon-free-time">
+
+                                        </i>
+                                    </span>
+                                    <select name="stu_time" id="time" class="form-control">
+                                        <option value="0" selected="selected">选择空闲时间</option>
+                                        <option value="1">双休日全天</option>
+                                        <option value="2">周一到周五晚上</option>
+                                        <option value="3">其他时间</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- 这一行是省级地区选择 -->
+                            <div class="row">
+                                <div class="input-group col-xs-10 col-xs-offset-1">
+                                    <span class="input-group-addon">
+                                        <i class="icon-form icon-place">
+
+                                        </i>
+                                    </span>
+                                    <select name="stu_location1" id="location1" class="form-control">
+                                        <option value="0" selected="selected">选择所在省份</option>
+                                        <option value="1">北京市</option>
+                                        <option value="2">天津市</option>
+                                        <option value="3">河北省</option>
+                                        <option value="4">山西省</option>
+                                        <option value="5">内蒙古自治区</option>
+                                        <option value="6">辽宁省</option>
+                                        <option value="7">吉林省</option>
+                                        <option value="8">黑龙江省</option>
+                                        <option value="9">上海市</option>
+                                        <option value="10">江苏省</option>
+                                        <option value="11">浙江省</option>
+                                        <option value="12">安徽省</option>
+                                        <option value="13">福建省</option>
+                                        <option value="14">江西省</option>
+                                        <option value="15">山东省</option>
+                                        <option value="16">河南省</option>
+                                        <option value="17">湖北省</option>
+                                        <option value="18">湖南省</option>
+                                        <option value="19">广东省</option>
+                                        <option value="20">广西壮族自治区</option>
+                                        <option value="21">海南省</option>
+                                        <option value="22">重庆市</option>
+                                        <option value="23">四川省</option>
+                                        <option value="24">贵州省</option>
+                                        <option value="25">云南省</option>
+                                        <option value="26">西藏自治区</option>
+                                        <option value="27">陕西省</option>
+                                        <option value="28">甘肃省</option>
+                                        <option value="29">青海省</option>
+                                        <option value="30">宁夏回族自治区</option>
+                                        <option value="31">新疆维吾尔自治区</option>
+                                        <option value="32">台湾省</option>
+                                        <option value="33">香港</option>
+                                        <option value="34">澳门</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- 这一行是市级地区选择 -->
+                            <div class='row'>
+                                <div class="input-group col-xs-10 col-xs-offset-1">
+                                    <span class="input-group-addon">
+                                        <i class="icon-form icon-place">
+
+                                        </i>
+                                    </span>
+                                    <select name="stu_location2" id="location2" class="form-control">
+                                        <option value="0">选择所在城市</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- 这一行是区级地区选择 -->
+                            <div class='row'>
+                                <div class="input-group col-xs-10 col-xs-offset-1">
+                                    <span class="input-group-addon">
+                                        <i class="icon-form icon-place">
+
+                                        </i>
+                                    </span>
+                                    <select name="stu_location3" id="location3" class="form-control">
+                                        <option value="0">选择所在地区</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <p class="text-left col-xs-offset-1" style="cursor: pointer;color:#ff9514;" id="check-class">感兴趣的课程 (多选)&nbsp;
+                            </p>
+                            <!-- 这一行是感兴趣的课程选择 -->
+                            <div class='row col-xs-offset-1 col-xs-9' style='margin-bottom:16px;' id='checkbox-class'>
+                                <div class="row">
+                                    <label class="checkbox-inline col-md-5 col-xs-12">
+                                        <input type="checkbox" name="check-class" value="1" class="checkbox-change">
+                                        <span class='checkbox-input'></span> 图形化编程
+                                    </label>
+                                    <label class="checkbox-inline col-md-5 col-xs-12">
+                                        <input type="checkbox" name="check-class" value="2" class="checkbox-change">
+                                        <span class="checkbox-input"></span> 手机App开发
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <label class="checkbox-inline col-md-5 col-xs-12">
+                                        <input type="checkbox" name="check-class" value="3" class="checkbox-change">
+                                        <span class="checkbox-input"></span> Arduino硬件开发
+                                    </label>
+                                    <label class="checkbox-inline col-md-5 col-xs-12">
+                                        <input type="checkbox" name="check-class" value="4" class="checkbox-change">
+                                        <span class="checkbox-input"></span> Python编程
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <label class="checkbox-inline col-md-5 col-xs-12">
+                                        <input type="checkbox" name="check-class" value="5" class="checkbox-change">
+                                        <span class='checkbox-input'></span> 创客训练营
+                                    </label>
+                                    <label class="checkbox-inline col-md-5 col-xs-12">
+                                        <input type="checkbox" name="check-class" value="6" class="checkbox-change">
+                                        <span class='checkbox-input'></span> 网页设计
+                                    </label>
+                                </div>
+
+                            </div>
+                            <!-- 这一行是资源选择 -->
+
+                            <div class="row">
+                                <div class="input-group col-xs-10 col-xs-offset-1">
+                                    <span class="input-group-addon">
+                                        <i class="icon-form icon-search">
+
+                                        </i>
+                                    </span>
+                                    <select name="stu_source" class="form-control">
+                                        <option value="0">您从哪里知道我们</option>
+                                        <option value="1">微信朋友圈</option>
+                                        <option value="2">搜索引擎</option>
+                                        <option value="3">官方公众号</option>
+                                        <option value="4">户外广告</option>
+                                        <option value="5">线下活动</option>
+                                        <option value="6">朋友介绍</option>
+                                        <option value="7">老师推荐</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br/>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class='btn btn-info col-xs-6 col-xs-offset-3' value='立即预约'>
+                    </div>
+
+                </form>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/basic.js"></script>
+    <script>
+        $(function () {
+            // <!-- Swiper配置 -->
+            // 控制banner部分swiper
+            var swiper0 = new Swiper('#swiper_banner', {
+                autoHeight: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                // 自动播放
+                autoplay: true,
+                // 循环播放
+                loop: true,
+                // 滚轮控制
+                mousewheel: true,
+                // 速度
+                speed: 1200
+            })
+            // 控制md适配编程一小时swiper
+            var swiper1 = new Swiper('#swiper_pro1', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                // 自动播放
+                autoplay: true,
+                // 循环播放
+                loop: true,
+                // 滚轮控制
+                mousewheel: true,
+                // 速度
+                speed: 800
+            });
+            // 控制xs适配编程一小时swiper
+            var swiper2 = new Swiper('#swiper_pro2', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                // 自动播放
+                autoplay: true,
+                // 循环播放
+                loop: true,
+                // 滚轮控制
+                mousewheel: true,
+                // 速度
+                speed: 800
+            });
+            // 控制sm适配变成一小时swiper
+            var swiper3 = new Swiper('#swiper_pro3', {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                // 自动播放
+                autoplay: true,
+                // 循环播放
+                loop: true,
+                // 滚轮控制
+                mousewheel: true,
+                // 速度
+                speed: 800
+            });
+
+            // 控制md适配团队swiper   
+            var swiper4 = new Swiper('#swiper_team1', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                // 自动播放
+                autoplay: true,
+                // 循环播放
+                loop: true,
+                // 动画效果
+                effect: "slide",
+                // 滚轮控制
+                mousewheel: true,
+                // 速度
+                speed: 800
+            });
+            // 控制xs sm适配团队swiper
+            var swiper5 = new Swiper('#swiper_team2', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                // 自动播放
+                autoplay: true,
+                // 循环播放
+                loop: true,
+                // 动画效果
+                effect: "coverflow",
+                // 滚轮控制
+                mousewheel: true,
+                // 速度
+                speed: 800
+            });
+
+            // <!-- 控制模态框视频url以及title -->
+            // 整合模态框控制播放函数
+            function classesControl(e) {
+                // 查出需要使用哪一个模态框
+                var target = $(e.target).parent().attr('data-target');
+                // 获取url
+                var url = $(e.target).parent().attr('vurl');
+                // 获取标题
+                var title = $(e.target).parent().attr('data-title');
+                // 设置目标模态框标题/url
+                let finalTitle = target.concat(' .modal-title');
+                let finalUrl = target.concat(' #video1');
+                $(finalTitle).html(title);
+                $(finalUrl).attr('src', url);
+                console.log($(finalUrl).attr('src'));
+            }
+            // 公开课
+            $('.show').on('click', '.pVideo', function (e) {
+                $('.video_play').show();
+                classesControl(e);
+                $('#VideoModal-public .btn-group button:nth-child(' + Number($(e.target).parent().attr('data-number')) + ')').addClass('active').siblings().removeClass('active');
+            })
+            // 非公开课
+            $('.thumbnail').on('click', '.mvideo', function (e) {
+                $('.video_play').show();
+                classesControl(e);
+            });
+            // 公开课按钮菜单
+            $('.publicList').on('click', '.btn', function (e) {
+                $('.video_play').show();
+                $('#VideoModal-public .modal-title').html($(e.target).attr('data-title'));
+                $('#VideoModal-public #video1').attr('src', $(e.target).attr('vurl'));
+                $('#VideoModal-public .btn-group button:nth-child(' + Number($(e.target).attr('data-number')) + ')').addClass('active').siblings().removeClass('active');
+            });
+
+            // 控制视频播放按钮
+            $('.video_play').on('click', function (e) {
+                ;
+                if ($(e.target).parent().attr('data-target') == 'classes') {
+                    $('#VideoModal-classes #video1').get(0).play();
+                } else {
+                    $('#VideoModal-public #video1').get(0).play();
+                }
+                $(e.target).parent().hide();
+            })
+
+            // 设置新闻部分层叠轮播图
+            // 定义写定样式
+            var cssArr = [{
+                'z-index': 1,
+                'left': '10%',
+                'top': '10%',
+                'opacity': '.6'
+            },
+            {
+                'z-index': 2,
+                'left': '5%',
+                'top': '0%',
+                'opacity': '1'
+            }];
+
+            // 定时器
+            var timer1 = null;
+            var t = 0;
+            function change() {
+                if (t === 0) {
+                    $('div.news .show.hidden-xs a:first').css(cssArr[0]);
+                    $('div.news .show.hidden-xs a:last').css(cssArr[1]);
+                    $('div.news .show.visible-xs a:first').css(cssArr[0]);
+                    $('div.news .show.visible-xs a:last').css(cssArr[1]);
+                    t = 1;
+                } else {
+                    $('div.news .show.hidden-xs a:first').css(cssArr[1]);
+                    $('div.news .show.hidden-xs a:last').css(cssArr[0]);
+                    $('div.news .show.visible-xs a:first').css(cssArr[1]);
+                    $('div.news .show.visible-xs a:last').css(cssArr[0]);
+                    t = 0;
+                }
+
+
+
+            }
+            timer1 = setInterval(change, 2000);
+            $('div.news .show img').on('mouseenter', function () {
+                clearInterval(timer1);
+            })
+            $('div.news .show img').on('mouseleave', function () {
+                timer1 = setInterval(change, 2000);
+            })
+
+
+            // 当模态框隐藏时，该视频停止播放
+            $('.close').on('click', function () {
+                $('video').trigger('pause');
+            })
+
+
+            // 模拟登陆成功,去除登录注册，改为头像
+            $('#head_login').on('click', function () {
+                // 关闭登录模态框
+                $('#SignIn').modal('hide');
+                // 去除登录注册所在li
+                $('a.SignIn').parent().hide();
+                // 添加头像
+                // 定义一个新li容器
+                var newLi = $('<li class="dropdown li-head"></li>');
+                // 定义一个a
+                var newA = $('<a href="#" class="dropdown-toggle user_head" data-toggle="dropdown"></a>');
+                // 去掉a的padding-top
+                newA.css({
+                    'paddingTop': 0,
+                    'margin-top': -6
+                });
+                // 定义一个菜单menu
+                var newMenu = $('<ul class="dropdown-menu"></ul>');
+                // 选项一
+                var op1 = $('<li><a href="#"><i class="icon-bar icon-user" style="margin-right:3px !important;"></i> 我的主页</a></li>');
+                // 选项二
+                var op2 = $('<li><a href="#"><i class="icon-bar icon-set" style="margin-right:3px !important;"></i> 设置</a></li>');
+                // 选项三
+                var op3 = $('<li><a href="#" id="logOut"><i class="icon-bar icon-out" style="margin-right:3px !important;"></i> 退出</a></li>');
+                // 选项添加进ul菜单
+                newMenu.append(op1).append(op2).append(op3);
+                // 定义头像
+                var newHead = $('<img src="./img/msg/zuopin_msg_img_qq.png" style="width:60px;height:60px;" class="img-responsive">');
+                // 头像加入新a
+                newA.append(newHead);
+                // a加入li容器
+                newLi.append(newA);
+                // 菜单加入li容器
+                newLi.append(newMenu);
+                // li容器加入导航
+                $('ul.my-menu').append(newLi);
+
+                $('ul.my-menu li a#logOut').on('click', function () {
+                    $('li.li-head').hide();
+                    $('ul.my-menu li a.SignIn').parent().show();
+                });
+
+            });
+
+        })
+    </script>
+
+</body>
+
+</html>
